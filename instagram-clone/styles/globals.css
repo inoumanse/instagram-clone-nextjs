@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.instagram-logo{
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    background-image: url(https://bit.ly/3v2LT17);
+}
