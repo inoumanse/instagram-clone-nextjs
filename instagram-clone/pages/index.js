@@ -5,14 +5,12 @@ import styles from '../styles/Home.module.css'
 import Login from './components/Login'
 import Header from './components/Header'
 import Stories from './components/Strories'
+import Feed from './components/Feed'
+import NewsFeedandHeader from './components/NewsFeedandHeader'
 
 export default function Home() {
   return (
-    <div className="h-screen relative">
-      <Header/>
-      <div className="">
-        <Stories/>
-      </div>
+    <div>
       <Login/>
     </div>
   )

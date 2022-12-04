@@ -27,8 +27,8 @@ const Stories = () => {
         }
     }
     return(
-        <div className="relative w-max">
-            <div onScroll={onScroll} ref={storiesRef} className="flex space-x-2 overflow-x-scroll max-w-xl bg-white
+        <div className="relative">
+            <div onScroll={onScroll} ref={storiesRef} className="flex space-x-2 overflow-x-scroll bg-white
                     border-gray-200 p-4 scroll-smooth scrollbar-hide">
                 {stories.map(story => <Story
                     key={story.id}

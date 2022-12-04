@@ -47,7 +47,7 @@ const Login = () =>{
                         <button onClick={e => pressShow(e)} className="absolute right-2 bottom-2
                                         focus:text-gray-500 text-sm font-semibold">{showPassword ? 'Hide':'Show'}</button>
                     </div>
-                    <Link href="./components/Header" className={`mt-2 text-sm text-center ${hasFilledBoth ? "bg-blue-500"  : "bg-blue-300"}
+                    <Link href="./components/NewsFeedandHeader" className={`mt-2 text-sm text-center ${hasFilledBoth ? "bg-blue-500"  : "bg-blue-300"}
                             text-white py-1 rounded font-medium`}>Log in</Link>
                 </form>
                 <div className="flex space-x-2 w-64 mt-4 items-center">

@@ -8,6 +8,7 @@ import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 import { faCompass, faPlusSquare, faHeart } from "@fortawesome/free-regular-svg-icons";
 import HeartTip from "./HeartTip";
 import SearchTip from "./SearchTip";
+import Feed from "./Feed";
 
 const Header = () => {
 
@@ -40,19 +41,22 @@ const Header = () => {
     }, [])
     return(
         <div className="shadow-sm border-b bg-white top-0 fixed w-full">
-            <div className="flex justify-between max-w-6xl mx-5 xl:mx-auto p-2">
-                <div className="relative w-24 h-8 lg-inline-grid">
-                    <Image src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                        layout="fill" objectFit="contain"/>
+            <div className="flex justify-between max-w-4xl mx-5 xl:mx-auto p-2">
+                <div className="flex justify-between w-4/6">
+                    <div className="relative w-24 h-8 lg-inline-grid">
+                        <Image src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                            layout="fill" objectFit="contain"/>
+                    </div>
+                    <div ref={inputAreaRef} className="h-9 hidden relative mt-1 p-1 pl-2 rounded-sm sm:text-sm
+                                    border-solid border-[1.2px] border-gray-300 md:flex bg-gray-50 items-center w-5/12">
+                        {searchVisibility &&<SearchIcon className="h-3 w-5 text-gray-400"></SearchIcon>}
+                        <input type="text" placeholder="Search" className="flex-1 headerinput pl-1
+                                bg-gray-50 focus:outline-none"></input>
+                        {crossVisibility && <PlusCircleIcon className="h-4 w-5 text-gray-400 rotate-45"></PlusCircleIcon>}
+                        {showToolTip && <SearchTip/>}
+                    </div>
                 </div>
-                <div ref={inputAreaRef} className="relative mt-1 p-1 pl-1 rounded-sm sm:text-sm
-                                border-solid border-[1.2px] border-gray-300 flex bg-gray-50">
-                    {searchVisibility &&<SearchIcon className="h-5 w-5 text-gray-400"></SearchIcon>}
-                    <input type="text" placeholder="search" className="headerinput pl-1
-                            bg-gray-50 focus:outline-none"></input>
-                    {crossVisibility && <PlusCircleIcon className="h-5 w-5 text-gray-400 rotate-45"></PlusCircleIcon>}
-                    {showToolTip && <SearchTip/>}
-                </div>
+                
                 <div className="flex items-center justify-end space-x-4">
                     <HomeIcon className="h-6 cursor-pointer" />
                     <div className="relative">
