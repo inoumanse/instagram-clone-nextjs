@@ -4,11 +4,15 @@ import Image from 'next/legacy/image'
 import styles from '../styles/Home.module.css'
 import Login from './components/Login'
 import Header from './components/Header'
+import Stories from './components/Strories'
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="h-screen relative">
       <Header/>
+      <div className="">
+        <Stories/>
+      </div>
       <Login/>
     </div>
   )
