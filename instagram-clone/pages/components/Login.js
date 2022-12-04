@@ -1,4 +1,6 @@
 import { useRef, useState } from "react"
+import Header from "./Header";
+import Link from "next/Link"
 
 const Login = () =>{
 
@@ -45,7 +47,8 @@ const Login = () =>{
                         <button onClick={e => pressShow(e)} className="absolute right-2 bottom-2
                                         focus:text-gray-500 text-sm font-semibold">{showPassword ? 'Hide':'Show'}</button>
                     </div>
-                    <a className={`mt-2 text-sm text-center ${hasFilledBoth ? "bg-blue-500" : "bg-blue-300"} text-white py-1 rounded font-medium`}>Log in</a>
+                    <Link href="./components/Header" className={`mt-2 text-sm text-center ${hasFilledBoth ? "bg-blue-500"  : "bg-blue-300"}
+                            text-white py-1 rounded font-medium`}>Log in</Link>
                 </form>
                 <div className="flex space-x-2 w-64 mt-4 items-center">
                     <span className="bg-gray-300 h-px flex-1"></span>
