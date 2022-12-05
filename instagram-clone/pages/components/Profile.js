@@ -73,7 +73,7 @@ const Profile = () => {
                     </div>
                     <div className="absolute top-0 opacity-0 group-hover:opacity-100 left-1/2 
                                     -translate-x-1/2 w-full h-full bg-black-rgba flex text-white 
-                                    justify-center items-center space-x3">
+                                    justify-center items-center space-x-3">
                         <div className='space-x-1'>
                             <HeartIcon className='h-6 inline'/>
                             <span>3</span>
