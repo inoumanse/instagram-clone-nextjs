@@ -7,11 +7,14 @@ import Header from './components/Header'
 import Stories from './components/Strories'
 import Feed from './components/Feed'
 import NewsFeedandHeader from './components/NewsFeedandHeader'
+import Profile from './components/Profile'
+import Footer from './components/Footer'
+import Main from './components/Main'
 
 export default function Home() {
   return (
-    <div>
-      <Login/>
+    <div className='h-screen bg-gray-100'>
+      <Main/>
     </div>
   )
 }

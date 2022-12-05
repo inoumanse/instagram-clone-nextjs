@@ -7,6 +7,9 @@ module.exports = {
   
   theme: {
     extend: {
+      colors:{
+        'black-rgba': 'rgba(0, 0, 0, 0.3)'
+      },
       animation:{
         fade: 'fade 5s ease-in-out'
       },

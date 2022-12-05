@@ -11,7 +11,7 @@ const Suggestions = () => {
         <div className="flex items-center justify-between mt-3">
             <div className="avatar">
                 <div className=" rounded-full w-8 h-8">
-                    <img src="https://reqres.in/img/faces/11-image.jpg" />
+                    <img src="https://reqres.in/img/faces/1-image.jpg" />
                 </div>
             </div>
             <div className='flex-1 ml-4'>

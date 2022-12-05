@@ -9,6 +9,8 @@ import { faCompass, faPlusSquare, faHeart } from "@fortawesome/free-regular-svg-
 import HeartTip from "./HeartTip";
 import SearchTip from "./SearchTip";
 import Feed from "./Feed";
+import Link from "next/Link"
+
 
 const Header = () => {
 
@@ -76,7 +78,9 @@ const Header = () => {
                     <FontAwesomeIcon className="cursor-pointer" icon={faCompass} size="lg"/>
                     <div className="avatar">
                         <div className="w-8 h-8 rounded-full">
-                            <img src="https://placeimg.com/192/192/people" />
+                            <Link href="./ProfileandHeader">
+                                <img src="https://placeimg.com/192/192/people" />
+                            </Link>
                         </div>
                     </div>
                 </div>
